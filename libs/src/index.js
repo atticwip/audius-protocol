@@ -182,6 +182,8 @@ class AudiusLibs {
    *  bank program can take ownership of accounts
    * @param {string} feePayerAddress address for the fee payer for transactions
    * @param {string} claimableTokenProgramAddress address of the audius user bank program
+   * @param {string} rewardsManagerProgramId address for the Rewards Manager program
+   * @param {string} rewardsManagerProgramPDA Rewards Manager PDA
    */
   static configSolanaWeb3 ({
     solanaClusterEndpoint,
@@ -189,7 +191,9 @@ class AudiusLibs {
     solanaTokenAddress,
     claimableTokenPDA,
     feePayerAddress,
-    claimableTokenProgramAddress
+    claimableTokenProgramAddress,
+    rewardsManagerProgramId,
+    rewardsManagerProgramPDA
   }) {
     return {
       solanaClusterEndpoint,
@@ -197,7 +201,9 @@ class AudiusLibs {
       solanaTokenAddress,
       claimableTokenPDA,
       feePayerAddress,
-      claimableTokenProgramAddress
+      claimableTokenProgramAddress,
+      rewardsManagerProgramId,
+      rewardsManagerProgramPDA
     }
   }
 
